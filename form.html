@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro-Wrestling Seminar — Sign Up Form</title>
+    <!--bootstrap stylesheet-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container text-center">
+        <h2 class="pt-5">Pro Wrestling Seminar <br>Sign Up Form</h2>
+
+        <div id="error"></div>
+        
+        <form class="row g-3" target="_blank">
+            <div class="col-sm-6">
+                <input type="text" minlength="3" required class="form-control" id="inputFirstName" placeholder="First Name">
+            </div>
+            <div class="col-sm-6">
+                <input type="text" required class="form-control" id="inputLastName" placeholder="Last Name">
+            </div>
+            <div class="col-sm-6">
+                <input type="text" autocomplete="off" minlength="14" maxlength="14" required class="form-control" id="inputCPF" placeholder="CPF">
+            </div>
+            <div class="col-sm-6">
+                <input type="text" required class="form-control" minlength="15" maxlength="15" id="inputPhoneNumber" placeholder="Phone Number">
+            </div>
+            <div class="col-md-6">
+                <input type="email" required class="form-control" id="inputEmail" placeholder="E-mail">
+            </div>
+
+            <div class="col">
+                <input type="text" required class="form-control" id="inputZip" maxlength="9" placeholder="Zip Code">
+            </div>
+
+            <div class="col-12">
+                <label for="inputAddress" class="form-label" id="txtStreet">Address</label>
+                <input type="text" required class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" required class="form-control" id="inputAddress2" placeholder="Apartment, studio or floor">
+            </div>
+            <div class="col-sm-6">
+                <label for="inputCity" class="form-label" id="txtCity">City</label>
+                <input type="text" required class="form-control" id="inputCity">
+            </div>
+            <div class="col-sm-6">
+                <label for="inputCity" class="form-label" id="txtState">State</label>
+                <input type="text" required class="form-control" id="inputState">
+            </div>
+
+            <div class="col-12">
+                <div class="form-check pb-2">
+                  <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                  <label class="form-check-label" for="gridCheck">
+                    I am clear to practice physical activities.
+                  </label>
+                </div>
+                <div class="d-grid gap-2 col-6 col-lg-4 mx-auto">
+                    <button type="submit" class="btn btn-lg btn-danger" id="botao">Sign in</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="./app.js"></script>
+    <!--bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
